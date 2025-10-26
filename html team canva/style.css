@@ -1,0 +1,94 @@
+/* Global Reset: සියලුම elements වලට margin සහ padding ඉවත් කර, border-box යොදන්න. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Font එක 'Poppins' ලෙස සකස් කර ඇත */
+    font-family: "Poppins", sans-serif; 
+}
+
+/* Body Styles: මුළු පිටුවම Flexbox භාවිතයෙන් තිරයේ මධ්‍යයට ගෙන ඒමට */
+body {
+    display: flex;
+    justify-content: center; /* තිරයේ තිරස් අතට මධ්‍යගත කරන්න */
+    align-items: center; /* තිරයේ සිරස් අතට මධ්‍යගත කරන්න */
+    
+    /* Viewport Height: body එකට තිරයේ උස ලබා දීමෙන් මධ්‍යගත කිරීම ක්‍රියාත්මක වේ */
+    height: 100vh; 
+    
+    /* පසුබිම් Gradient එක ඔබ ලබා දුන් නිවැරදි වර්ණ කේතවලින් */
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+/* Container Styles: Card එකේ පෙනුම */
+.container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px; /* මධ්‍යගත කිරීමෙන් පසු වැඩි margin එකක් ලබා දීම */
+    color: #333;
+}
+
+/* Input Box: input element එක අඩංගු div */
+.input-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #f0f0f0;
+    outline: none;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+.input-box input:focus {
+    border: 2px solid #667eea; /* focus කරන විට border එක පෙන්වන්න */
+}
+
+/* Button Styles: Submit button එකට වර්ණ සහ animation */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+/* Paragraph Styles: "Remembered?" text එක සඳහා */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Anchor (Link) Styles: "Back to Login" link එක සඳහා */
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
